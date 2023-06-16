@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/btnRelativeLayout"
+        android:layout_width="333dp"
+        android:layout_height="594dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp">
+
+
+        <ImageButton
+            android:id="@+id/ObjDetectionImageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            android:background="#9acc99"
+            app:srcCompat="@drawable/object_detection_button_image"
+            />
+
+        <ImageButton
+            android:id="@+id/ObsDetectionImageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="289dp"
+            android:layout_below="@+id/ObjDetectionImageBtn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="19dp"
+            android:background="#99cdff"
+            app:srcCompat="@drawable/obstacle_detection_button_image"
+            />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/GenEyeLogo"
+        android:layout_width="202dp"
+        android:layout_height="102dp"
+        app:srcCompat="@drawable/geneye_logo" />
+
+
+</RelativeLayout>
